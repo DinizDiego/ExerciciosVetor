@@ -1,0 +1,8 @@
+C:\Users\diego.dfferreira1\source\repos\EstruturaRepeticaoVetor\EstruturaRepeticaoVetor\bin\Debug\EstruturaRepeticaoVetor.exe.config
+C:\Users\diego.dfferreira1\source\repos\EstruturaRepeticaoVetor\EstruturaRepeticaoVetor\bin\Debug\EstruturaRepeticaoVetor.exe
+C:\Users\diego.dfferreira1\source\repos\EstruturaRepeticaoVetor\EstruturaRepeticaoVetor\bin\Debug\EstruturaRepeticaoVetor.pdb
+C:\Users\diego.dfferreira1\source\repos\EstruturaRepeticaoVetor\EstruturaRepeticaoVetor\obj\Debug\EstruturaRepeticaoVetor.csproj.AssemblyReference.cache
+C:\Users\diego.dfferreira1\source\repos\EstruturaRepeticaoVetor\EstruturaRepeticaoVetor\obj\Debug\EstruturaRepeticaoVetor.csproj.SuggestedBindingRedirects.cache
+C:\Users\diego.dfferreira1\source\repos\EstruturaRepeticaoVetor\EstruturaRepeticaoVetor\obj\Debug\EstruturaRepeticaoVetor.csproj.CoreCompileInputs.cache
+C:\Users\diego.dfferreira1\source\repos\EstruturaRepeticaoVetor\EstruturaRepeticaoVetor\obj\Debug\EstruturaRepeticaoVetor.exe
+C:\Users\diego.dfferreira1\source\repos\EstruturaRepeticaoVetor\EstruturaRepeticaoVetor\obj\Debug\EstruturaRepeticaoVetor.pdb
