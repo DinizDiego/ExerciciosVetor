@@ -17,6 +17,13 @@ namespace EstruturaRepeticaoVetor
         public int j;//Contador
         public double[] VinteNum;
         public int[] QuinzePar;
+        public double[] VinteCincoMaior;
+        public double maior;//Váriavel
+        public double menor;//Váriavel
+        public double[] TrintaMenor;
+        public int posicao;
+        public double[] SegundoMaior;
+        public double SegMaior;
 
         public Model()
         {
@@ -25,6 +32,13 @@ namespace EstruturaRepeticaoVetor
             pares = new int[10];
             VinteNum = new double[20];
             QuinzePar = new int[15];
+            VinteCincoMaior = new double[25];
+            TrintaMenor = new double[30];
+            SegundoMaior = new double[50];
+            SegMaior = 0;
+            posicao = 0;
+            menor = 0;
+            maior = 0;
             i = 0;
             j = 0;
             ConsultarSoma = 0;
@@ -32,7 +46,8 @@ namespace EstruturaRepeticaoVetor
 
         public double ConsultarSoma
         {
-            get { return ConsultarSoma; }
+            get 
+            { return ConsultarSoma; }
             set { this.soma = value; }
         }
 
@@ -119,6 +134,87 @@ namespace EstruturaRepeticaoVetor
                 }//Fim da validação
             }//Fim do for           
             Console.WriteLine(j + " Número(s) Par(es)");
+        }//Fim do método
+
+        //Exercício 5
+        public void PreencherVetorVinteCinco()
+        {
+            for(i=0; i < 25; i++)
+            {
+                Console.WriteLine(i+1 + "° Número: ");
+                VinteCincoMaior[i] = Convert.ToDouble(Console.ReadLine());
+            }//Fim do For
+        }//Fim do método
+
+        public void MostrarMaiorVinteCinco()
+        {
+            for(i = 0; i < 25; i++)
+            {
+                if(maior < VinteCincoMaior[i])
+                {
+                    maior = VinteCincoMaior[i];
+                    j = j + 1;
+                }
+            }//Fim do for
+            Console.WriteLine("O maior número é: " + maior + " e sua posição é: " + j + 1);
+        }//Fim do método
+
+        //Execício 6
+        public void PreencherVetorTrinta()
+        {
+            for (i = 0; i < 30; i++)
+            {
+                Console.WriteLine(i + 1 + "° Número: ");
+                TrintaMenor[i] = Convert.ToDouble(Console.ReadLine());
+            }//Fim do For
+        }//Fim do método
+
+
+        public void MostrarMenorTrinta()
+        {
+            menor = TrintaMenor[0];
+            for (i=1; i<30; i++)
+            {
+                if(menor > TrintaMenor[i])
+                {
+                    menor = TrintaMenor[i];
+                    j = j + 1;
+                }
+                else
+                {
+                    j = 1;
+                }
+            }//Fim do for
+            Console.WriteLine("O menor número é: " + menor + " e sua posição é: " + j + "°");
+        }//Fim do método
+
+        //Exercício 7
+        public void PreencherCinquenta()
+        {
+            for(i=0; i < 50; i++)
+            {
+                Console.WriteLine(i + 1 + "° Número: ");
+                SegundoMaior[i] = Convert.ToDouble(Console.ReadLine());
+            }//Fim do for 
+        }//Fim do método
+
+        public void MostrarSegundoMaiorCinquenta()
+        {
+            for(i = 0; i < 50; i++)
+            {
+                if (SegundoMaior[i] > maior)
+                {
+                    maior = SegundoMaior[i];
+                }
+                else
+                {
+                    if ((SegundoMaior[i] > SegMaior) && (SegundoMaior[i] != maior))
+                    {
+                        SegMaior = SegundoMaior[i];
+                    }                   
+                }
+            }//Fim do for
+            Console.WriteLine("O segundo maior número é: " + SegMaior);
         }//Fim do método
 
     }//Fim do classe
